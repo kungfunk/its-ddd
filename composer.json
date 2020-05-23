@@ -1,0 +1,25 @@
+{
+    "name": "kungfunk/its-ddd",
+    "description": "Simple incident ticket system (ITS) based on Slim, DDD and Hexagonal Architecture",
+    "authors": [
+        {
+            "name": "kungfunk",
+            "email": "kung.funk@gmail.com"
+        }
+    ],
+    "license": "The Unlicense",
+    "autoload": {
+        "psr-4": {
+            "ITS\\": "src/",
+            "Api\\": "apps/api/src/"
+        }
+    },
+    "scripts": {
+        "fixer": "php-cs-fixer fix -v --diff ."
+    },
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.1",
+        "ramsey/uuid": "^4.0"
+    }
+}
